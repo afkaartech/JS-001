@@ -1,0 +1,42 @@
+//Assignment JS-001//
+//By Muhammad Hamza//
+
+------Problem 1-----
+let value1 = "aa";
+let value2 = "bb";
+let value3 = "";
+let str;
+
+str = value1 + "" + value2 + value3;
+
+console.log(str);
+
+function concatenateStrings(value1, value2) {
+    throw new Error('Not implemented');
+}
+
+-------problem 2--------
+
+function validateEmail(email) {
+    var re = /([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)/ig;
+    return email.match(re);
+}
+
+
+var valid = validateEmail ("angus.young@gmail.com;brian.johnson@hotmail.com; info@gmail.com ; bon.scott@yahoo.com");
+console.log(valid);
+
+
+-------problem 3---------
+
+<script>
+const countOccurrences = (arr, val) => arr.reduce((a, v) => (v === val ? a + 1 : a), 0);
+document.write(countOccurrences([ 0, 0, 1, 1, 1, 2 ], 1));
+document.write(countOccurrences( [ 1, 2, 3, 4, 5 ], 0));
+document.write(countOccurrences( [ 'a','b','c','c' ], 'c'));
+document.write(countOccurrences(['null', 'undefined', 'null' ], 'null' ));
+document.write(countOccurrences([true , '0', '1', 'true' ], 'true'));
+//document.getElementById("demo").innerHTML =
+//"The value of z is: " + z;
+</script>
+
